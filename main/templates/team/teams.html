@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Teams</title>
+    </head>
+    <body>
+        <h1 align="center">All Team Details</h1>
+        <table align="center" border="1">
+            <tr>
+                <th>Team id </th>
+                <th>Team name </th>
+            </tr>
+            {% for team in teams%}
+            <tr>
+                <td>{{team.id}}</td>
+                <td>{{team.name}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>

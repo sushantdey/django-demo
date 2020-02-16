@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Team</title>
+</head>
+<body>
+    <h1 align="center">Register new team</h1>
+    <form method="POST" class="post-form" action="/team/create">
+        {% csrf_token %}
+        <table align="center" border="1">
+            <tr><th colspan="2"><h3>Enter Team Details</h3></th></tr>
+            <tr>
+                <th>Team name:</th>
+                <th>{{form.name}}</th>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Register"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
